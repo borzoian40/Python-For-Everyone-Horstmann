@@ -14,12 +14,15 @@ print(sum(10))
 
 
 #If we didn't have an inital input:
-def sum(num):
+def main(number):
     ans = 0
-    for i in range(num):
+
+    for i in range(number):
         ans += i
 
     print(ans)
 
-number = int(input())
-sum(number)
+if __name__ == "__main__":
+    number = int(input())
+    main(number)
+
