@@ -1,3 +1,5 @@
+#P1.1:  Write a program that prints a greeting of your choice, perhaps in a language other than English.
+
 #First Approach
 #Create a new function called greeting
 def greeting():
