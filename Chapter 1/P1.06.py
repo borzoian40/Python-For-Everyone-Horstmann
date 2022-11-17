@@ -108,3 +108,13 @@ for row in range(5):
             letter_K += " "
     letter_K = letter_K + "\n"
 print(letter_K)
+
+letter_L = ""
+for row in range(5):
+    for column in range(6):
+        if(column == 0) or (row == 4):
+            letter_L += "*"
+        else:
+            letter_L += " "
+    letter_L = letter_L + "\n"
+print(letter_L)
