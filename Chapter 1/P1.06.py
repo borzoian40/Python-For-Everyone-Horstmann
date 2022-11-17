@@ -120,6 +120,11 @@ for row in range(5):
 print(letter_L)
 
 letter_M = ""
-for row in range(5):
-    for column in range(6):
-        if
+for row in range(7):
+    for column in range(7):
+        if (column ==0 or column == 6) or (row == 1 and (column == 1 or column == 5)) or (row ==2 and(column == 2 or column == 4)) or (row == 3 and(column == 3)):
+            letter_M += "*"
+        else:
+            letter_M += " "
+    letter_M = letter_M + "\n"
+print(letter_M)
