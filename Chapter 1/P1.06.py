@@ -100,9 +100,9 @@ print(letter_J)
 
 
 letter_K = ""
-for row in range(5):
-    for column in range(7):
-        if(column == 0) or ((row==0 or row== 4) and (column == 6)) or ((row == 1 or row ==3) and (column == 2)):
+for row in range(7):
+    for column in range(5):
+        if(column == 0) or (row ==3 and column ==1 ) or ((row ==4 or row == 2)and column == 2) or((row ==1 or row == 5) and column ==3) or ((row==0 or row==6) and column ==4):
             letter_K += "*"
         else:
             letter_K += " "
