@@ -118,3 +118,8 @@ for row in range(5):
             letter_L += " "
     letter_L = letter_L + "\n"
 print(letter_L)
+
+letter_M = ""
+for row in range(5):
+    for column in range(6):
+        if
