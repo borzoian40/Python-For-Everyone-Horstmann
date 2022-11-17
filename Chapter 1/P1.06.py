@@ -139,3 +139,9 @@ for row in range(5):
 
     letter_N = letter_N + "\n"
 print(letter_N)
+
+
+letter_O = ""
+for row in range(5):
+    for column in range(6):
+        if(row== 0 
