@@ -144,4 +144,23 @@ print(letter_N)
 letter_O = ""
 for row in range(5):
     for column in range(6):
-        if(row== 0 
+        if((row== 0 or row == 4) or (column == 0 or column == 5)):
+            letter_O += "*"
+        else:
+            letter_O += " "
+    letter_O += "\n"
+print(letter_O)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
