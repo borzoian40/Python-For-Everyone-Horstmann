@@ -128,3 +128,14 @@ for row in range(7):
             letter_M += " "
     letter_M = letter_M + "\n"
 print(letter_M)
+
+letter_N = ""
+for row in range(5):
+    for column in range(6):
+        if (column == 0 or column == 5) or (column ==1 and row == 1) or (column == 2 and row == 2) or (row == 3 and column == 3) or(row== 4 and column == 4):
+            letter_N = letter_N + "*"
+        else:
+            letter_N += " "
+
+    letter_N = letter_N + "\n"
+print(letter_N)
