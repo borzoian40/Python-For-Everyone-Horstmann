@@ -292,5 +292,3 @@ print(letter_U)
 
 
 
-
-
