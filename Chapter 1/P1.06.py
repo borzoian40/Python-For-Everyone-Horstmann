@@ -264,6 +264,33 @@ for row in range(5):
     letter_S += "\n"
 print(letter_S)
 
+letter_T = ""
+for row in range(5):
+    for column in range(7):
+        if(
+                (row == 0)
+            or (column == 3)
+        ):
+            letter_T += "*"
+        else:
+            letter_T += " "
+    letter_T += "\n"
+print(letter_T)
+
+letter_U = ""
+for row in range(5):
+    for column in range(7):
+        if(
+                (column== 0) or (column == 6) or (row == 4)
+        ):
+            letter_U += "*"
+        else:
+            letter_U += " "
+    letter_U += "\n"
+print(letter_U)
+
+
+
 
 
 
