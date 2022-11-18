@@ -149,7 +149,17 @@ for row in range(5):
             letter_O += " "
     letter_O += "\n"
 print(letter_O)
-            
+
+
+letter_P = ""
+for row in range(5):
+    for column in range(6):
+        if(column == 0)  or (row==0) or row == 2 or (row==1 and column == 5):
+            letter_P += "*"
+        else:
+            letter_P += " "
+    letter_P += "\n"
+print(letter_P)
             
             
             
