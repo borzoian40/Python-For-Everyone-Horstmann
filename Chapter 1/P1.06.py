@@ -250,6 +250,20 @@ for row in range(5):
 print(letter_R)
 
 
+letter_S = ''
+for row in range(5):
+    for column in range(6):
+        if(
+               (row%2 == 0)
+            or (row == 1 and column == 0)
+            or (row == 3 and column ==5)
+        ):
+            letter_S += "*"
+        else:
+            letter_S += " "
+    letter_S += "\n"
+print(letter_S)
+
 
 
 
