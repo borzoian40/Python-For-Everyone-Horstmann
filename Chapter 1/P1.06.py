@@ -232,3 +232,24 @@ for row in range(8):
             letter_Q += " "
     letter_Q += "\n"
 print(letter_Q)
+
+
+letter_R = ""
+for row in range(5):
+    for column in range(6):
+        if (
+                ((row == 0 or row == 2) and (0 <= column <= 3))
+                or ((row == 1 or row == 3) and (column == 0 or column == 4))
+                or (row == 4 and (column == 0 or column == 5))
+
+        ):
+            letter_R += "*"
+        else:
+            letter_R += " "
+    letter_R += "\n"
+print(letter_R)
+
+
+
+
+
