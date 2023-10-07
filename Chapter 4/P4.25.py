@@ -32,43 +32,48 @@ sticking with the original choice. Run 1,000 iterations and print both counters
 """
 import random
 
-
 def main():
-    won = 0
-    lost = 0
 
-    for _ in range(1000):
-        print("WELCOME TO THE GAME SHOW!!")
+    #number of iterations:
+    iterations = 1000
 
-        car = random.randint(1, 3)
+    switch_wins = 0
+    stick_wins = 0
 
-        doors = [1, 2, 3]
+    for _ in range(iterations):
 
-        player = int(input(f"PICK A DOOR FROM {doors}:\n"))
-        doors.remove(player)
-        doors.remove(car)
+        # randomly place the car behind one of the doors (1, 2, 3)
+        car_behind = random.randint(1, 3)
 
-        game_host = random.choice(doors)
-        answer = "y"
+        # Player randomly picks a door(1, 2, or 3)
+        player_choice = random.randint(1, 3)
 
-        if player == car:
-            reply = input(f"DOOR {game_host} OPENED. DO YOU WANT TO CHANGE YOUR OPTION? (Y/N):\n")
-            if reply.lower() == answer:
-                lost += 1
-            else:
-                won += 1
+        # Host reveals a door with a goat that wasn't chosen by the player
 
-        elif player != car:
-            reply2 = input(f"DOOR {game_host} OPENED. DO YOU WANT TO CHANGE YOUR OPTION? (Y/N):\n")
+        possible_host_choices = []
 
-            if reply2.lower() == answer:
-                won += 1
-            else:
-                lost += 1
+         # Host reveals a door with a goat that wasn't chosen by the player or hiding the car
+        for door in [1, 2, 3]:
+            if door != player_choice and door != car_behind:
+                possible_host_choices.append(door)
 
-    print(f"Number of times lost: {lost}")
-    print(f"Number of times won:  {won}")
+        host_choice = random.choice(possible_host_choices)
 
+       # Determine the remaining unchosen door
+        remaining_door = None
+
+        for door in [1, 2, 3]:
+            if door != player_choice and door != host_choice:
+                remaining_door = door
+
+        if remaining_door == car_behind:
+            switch_wins += 1
+
+        elif player_choice == car_behind:
+            stick_wins += 1
+
+    print(f"The number of times player switched and won: {switch_wins}")
+    print(f"The number of times player didn't switch and won: {stick_wins}")
 
 if __name__ == "__main__":
     main()
