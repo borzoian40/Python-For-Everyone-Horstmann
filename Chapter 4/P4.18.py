@@ -7,3 +7,16 @@
 10 20 30 40 50 60 70 80 90 100
 
 """
+def main():
+    #for 10 rows
+    for i in range(1, 11):
+        #for 10 columns
+        for j in range(1, 11):
+          #usage of %d in aligning the spaces
+            print(f"%5d" % (i * j), end='')
+        #go to the next line with each iteration
+        print()
+
+if __name__ == "__main__":
+    main()
+
