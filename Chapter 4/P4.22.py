@@ -9,30 +9,34 @@ of the given side length. For example, if the side length is 4, the program shou
    ***
     *
 """
-
 def main():
+    # derive input from the user
     numbers_input = int(input("Enter the number of rows: "))
 
-    for i in range(1, numbers_input + 1):
-        for j in range(i, numbers_input + 1):
+    # determine the number of rows
+    for rows in range(1, numbers_input + 1):
+
+        # determine the number of columns for spaces
+        for col in range(rows, numbers_input + 1):
             print(" ", end='')
 
-        for k in range(1, i):
+        # print the set of stars in an ascending order from right to left
+        for k in range(rows):
             print("*", end='')
-
-        for j in range(i):
+        # print the set of stars in a descending order from right to left
+        for l in range(1, rows):
             print("*", end='')
 
         print()
 
-    for z in range(2, numbers_input + 1):
-        for t in range(z):
+    for row_descending in range(2, numbers_input + 1):
+        for x in range(row_descending):
             print(" ", end='')
 
-        for k in range(z, numbers_input + 1):
+        for y in range(row_descending, numbers_input + 1):
             print("*", end='')
 
-        for h in range(z, numbers_input):
+        for p in range(row_descending, numbers_input):
             print("*", end='')
 
         print()
@@ -40,3 +44,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
