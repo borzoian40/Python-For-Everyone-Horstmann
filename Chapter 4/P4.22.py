@@ -11,12 +11,31 @@ of the given side length. For example, if the side length is 4, the program shou
 """
 
 def main():
-    number_of_rows = int(input("Enter the number of rows: "))
+    numbers_input = int(input("Enter the number of rows: "))
 
-    for i in range(number_of_rows):
-        print("*")
+    for i in range(1, numbers_input + 1):
+        for j in range(i, numbers_input + 1):
+            print(" ", end='')
 
+        for k in range(1, i):
+            print("*", end='')
 
+        for j in range(i):
+            print("*", end='')
+
+        print()
+
+    for z in range(2, numbers_input + 1):
+        for t in range(z):
+            print(" ", end='')
+
+        for k in range(z, numbers_input + 1):
+            print("*", end='')
+
+        for h in range(z, numbers_input):
+            print("*", end='')
+
+        print()
 
 
 if __name__ == "__main__":
