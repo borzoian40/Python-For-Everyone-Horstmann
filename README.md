@@ -1,2 +1,3 @@
 # PythonForEveryone
-Solutions of "Python For Everyone" Textbook
+Solutions of "Python For Everyone (3rd Edition) - Cay Horstmann 
+Rance Necaise" Textbook
