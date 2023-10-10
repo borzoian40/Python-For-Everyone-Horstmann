@@ -26,3 +26,37 @@ def main():
 if __name__ == "__main__":
     main()
 
+"""
+def main():
+    # Constants
+    total_tickets = 100
+    max_tickets_per_buyer = 4
+    total_buyers = 0
+
+    # Loop until all tickets are sold
+    while total_tickets > 0:
+        # Prompt the user for the desired number of tickets
+        try:
+            desired_tickets = int(input("Enter the number of tickets you want to buy (1-4): "))
+        except ValueError:
+            print("Invalid input. Please enter a valid number between 1 and 4.")
+            continue
+
+        if desired_tickets < 1 or desired_tickets > max_tickets_per_buyer:
+            print(f"You can buy between 1 and {max_tickets_per_buyer} tickets at a time.")
+        elif desired_tickets > total_tickets:
+            print(f"Sorry, there are only {total_tickets} tickets remaining.")
+        else:
+            # Sell the tickets
+            total_tickets -= desired_tickets
+            total_buyers += 1
+            print(f"Sold {desired_tickets} ticket(s). {total_tickets} ticket(s) remaining.")
+
+    # All tickets have been sold
+    print("All tickets have been sold.")
+    print(f"Total number of buyers: {total_buyers}")
+
+if __name__ == "__main__":
+    main()
+"""
+
