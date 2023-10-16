@@ -14,3 +14,21 @@ h. Return true if the list is currently sorted in increasing order.
 i. Return true if the list contains two adjacent duplicate elements.
 j. Return true if the list contains duplicate elements (which need not be adjacent).
 """
+import random
+
+def main():
+    lists = []
+    for i in range(6):
+        lists.append(random.randint(1, 100))
+    print(lists)
+    # a)
+
+    temp = lists[0]
+    lists[0] = lists[-1]
+    lists[-1] = temp
+    print(lists)
+
+
+if __name__ == "__main__":
+    main()
+
