@@ -4,6 +4,7 @@ stores them in a list, prints the sequence, sorts it, and prints the sorted sequ
 the list sort method.
 """
 import random
+
 def main():
   lists = []
   for i in range(20):
