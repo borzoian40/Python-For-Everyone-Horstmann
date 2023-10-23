@@ -1,8 +1,8 @@
 """
  P7.1 Write a program that carries out the following tasks:
 Open a filewith the name hello.txt.
-Storethemessage“Hello,World!”inthefile. 
+Store the message “Hello,World!” in the file. 
 Close the file.
-Openthe same file again.
-Readthemessage into a string variable andprintit.
+Open the same file again.
+Read the message into a string variable and print it.
 """
