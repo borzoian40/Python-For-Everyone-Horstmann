@@ -20,7 +20,7 @@ def count_word_occurrences(file_name):
     return word_count
 
 def main():
-    file_name = 'babynames.txt'  # Replace with your file name or path
+    file_name = 'who_knows.txt'  # Replace with your file name or path
     word_count = count_word_occurrences(file_name)
 
     if word_count:
