@@ -13,7 +13,7 @@ def main():
     for i in range(num):
         while True:
             try:
-                number = int(input(f"{i + 1}: "))
+                number = int(input(f"{i+1}. Enter a number: "))
                 num_list.append(number)
                 break  # Exit the loop if the input is valid
             except ValueError:
@@ -25,7 +25,7 @@ def main():
             max = num_list[i]
 
     print(num_list)
-    print(f"Maximum value is: {max}")
+    print(f"The largest number is: {max}")
 
 if __name__ == "__main__":
     main()
