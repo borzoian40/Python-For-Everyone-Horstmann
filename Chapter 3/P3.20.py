@@ -56,8 +56,15 @@ def main():
 
             print("Season:", season)
 
+            # Ask the user if they want to continue
+            user_input = input("Do you want to continue? (yes/no): ").lower()
+            if user_input != 'yes':
+                print("Goodbye...")
+                break  # Exit the loop if the user does not want to continue
+
         except ValueError:
             print("Please enter valid numeric values.")
+
 
 if __name__ == "__main__":
     main()
