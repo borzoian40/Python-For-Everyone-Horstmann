@@ -4,7 +4,21 @@ stores them in a list, prints the sequence, sorts it, and prints the sorted sequ
 the list sort method.
 """
 import random
+"""
+import random
 
+def main():
+    lists = []
+    for i in range(20):
+        numbers = random.randint(0, 99)
+        lists.append(numbers)
+
+    lists.sort()
+    print(lists)
+
+if __name__ == "__main__":
+    main()
+"""
 def main():
   lists = []
   for i in range(20):
