@@ -13,27 +13,24 @@ then the program produces the output file
 Prompt the user for the input and output file 
 names
 """
-
+FILENAME = "randomlines.txt"
 def main():
-    # Prompt the user for input and output file names
-    input_file_name = input("Enter the name of the input file: ")
-    output_file_name = input("Enter the name of the output file: ")
 
     try:
         # Open the input file for reading
-        with open(input_file_name, "r") as input_file:
+        with open(FILENAME, "r") as input_file:
             # Read the lines from the input file
             lines = input_file.readlines()
 
         # Open the output file for writing
-        with open(output_file_name, "w") as output_file:
+        with open(FILENAME, "w") as output_file:
             # Write each line with line numbers to the output file
             for line_number, line in enumerate(lines, 1):
                 # Format the line with line number and write to the output file
                 formatted_line = f"/* {line_number} */ {line}"
                 output_file.write(formatted_line)
 
-        print(f"Lines with line numbers have been written to {output_file_name}")
+        print(f"Lines with line numbers have been written to \'{FILENAME}\'")
 
     except FileNotFoundError:
         print("File not found. Please make sure the input file exists.")
