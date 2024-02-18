@@ -1,6 +1,6 @@
 # MR. T PLAYS CHESS
 
-Chess tournaments played in Politecnico di Torino adopts an oversimplified scoring system called *SELO*. The underlying idea is that a player who wins against an opponent almost the same level gets 100 points, but a player who wins against a much weaker opponent gets much less points. Playing white or black makes no difference, and players who draw do not get any points.
+Chess tournaments played in a championship tournament adopts an oversimplified scoring system called *SELO*. The underlying idea is that a player who wins against an opponent almost the same level gets 100 points, but a player who wins against a much weaker opponent gets much less points. Playing white or black makes no difference, and players who draw do not get any points.
 
 In details, defining the *delta* function as
 
